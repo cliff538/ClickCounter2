@@ -13,8 +13,12 @@ class ViewController: UIViewController {
 	// MARK: - View Did Load
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		//removes gray bar from navigationBar.
+		//self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+		//self.navigationController?.navigationBar.shadowImage = UIImage()
 	}
 	
+	//These are called Pragma markers. Allows you to jump to sections in your code. Very helpful. 
 	// MARK: - Outlets
 	@IBOutlet weak var countLabel: UILabel!
 	
