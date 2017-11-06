@@ -13,8 +13,28 @@ class ViewController: UIViewController {
 	// MARK: - View Did Load
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		// Do any additional setup after loading the view, typically from a nib.
+		
 	}
+	
+	// MARK: - Outlets
+	@IBOutlet weak var countLabel: UILabel!
+	
+	// MARK: - Properties
+	var count = 0
+	
+	// MARK: - Interactions
+	@IBAction func tapCounter(_ sender: UIButton) {
+		count += 1
+		countLabel.text = String(count)
+	}
+	
+	@IBAction func tapResetButton(_ sender: UIBarButtonItem) {
+		count = 0
+		countLabel.text = String(count)
+	}
+	
+	
+	
 
 	
 
