@@ -17,22 +17,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="170" translatesAutoresizingMaskIntoConstraints="NO" id="Lgl-lx-Yri">
-                                <rect key="frame" x="163" y="172.33333333333334" width="88" height="391.33333333333326"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZM9-v7-d91">
+                                <rect key="frame" x="307" y="674" width="87" height="42"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="25"/>
+                                <state key="normal" title="Subtract"/>
+                                <connections>
+                                    <action selector="subtractButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bic-Jv-phD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="orQ-Cn-v6i">
+                                <rect key="frame" x="20" y="674" width="117" height="42"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="25"/>
+                                <state key="normal" title="Tap or Hold"/>
+                                <connections>
+                                    <action selector="tapOrHoldButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T6P-vU-3g9"/>
+                                    <outletCollection property="gestureRecognizers" destination="SBz-nz-6u4" appends="YES" id="5F9-6s-gCe"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="107" translatesAutoresizingMaskIntoConstraints="NO" id="Lgl-lx-Yri">
+                                <rect key="frame" x="163" y="203.99999999999997" width="88" height="328.33333333333326"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="79" translatesAutoresizingMaskIntoConstraints="NO" id="a3e-1f-Sil">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kpI-yW-a5w">
                                         <rect key="frame" x="10.333333333333343" y="0.0" width="67.333333333333329" height="137.33333333333334"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kpI-yW-a5w">
-                                                <rect key="frame" x="0.0" y="0.0" width="67.333333333333329" height="137.33333333333334"/>
-                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="115"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="115"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Dq-t3-kdb">
-                                        <rect key="frame" x="0.0" y="307.33333333333337" width="88" height="84"/>
+                                        <rect key="frame" x="0.0" y="244.33333333333331" width="88" height="84"/>
                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="60"/>
                                         <state key="normal" title="Tap"/>
                                         <connections>
@@ -40,42 +53,18 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="a3e-1f-Sil" secondAttribute="trailing" constant="10.33" id="NQU-kl-hOd"/>
-                                    <constraint firstItem="7Dq-t3-kdb" firstAttribute="top" secondItem="a3e-1f-Sil" secondAttribute="bottom" constant="170" id="cM6-tI-ZYd"/>
-                                    <constraint firstItem="a3e-1f-Sil" firstAttribute="leading" secondItem="Lgl-lx-Yri" secondAttribute="leading" constant="10.33" id="du6-ZX-a3x"/>
-                                    <constraint firstItem="a3e-1f-Sil" firstAttribute="top" secondItem="Lgl-lx-Yri" secondAttribute="top" id="feZ-Qb-aX5"/>
-                                </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZM9-v7-d91">
-                                <rect key="frame" x="301" y="674" width="93" height="42"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Subtract"/>
-                                <connections>
-                                    <action selector="subtractButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bic-Jv-phD"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="orQ-Cn-v6i">
-                                <rect key="frame" x="20" y="674" width="123" height="42"/>
-                                <gestureRecognizers/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Tap or Hold"/>
-                                <connections>
-                                    <action selector="tapOrHoldButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T6P-vU-3g9"/>
-                                    <outletCollection property="gestureRecognizers" destination="SBz-nz-6u4" appends="YES" id="5F9-6s-gCe"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Lgl-lx-Yri" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="CZ4-Zi-ac6"/>
-                            <constraint firstItem="Lgl-lx-Yri" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FYg-vs-qsU"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ZM9-v7-d91" secondAttribute="bottom" constant="20" id="LFP-Lg-HtN"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="orQ-Cn-v6i" secondAttribute="bottom" constant="20" id="X1N-ov-BIK"/>
-                            <constraint firstItem="Lgl-lx-Yri" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="e9N-Ig-Bd6"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZM9-v7-d91" secondAttribute="trailing" constant="20" id="gG8-GQ-kVY"/>
-                            <constraint firstItem="Lgl-lx-Yri" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xTO-wL-csc"/>
-                            <constraint firstItem="orQ-Cn-v6i" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="xgj-9E-wgS"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="orQ-Cn-v6i" secondAttribute="trailing" constant="20" symbolic="YES" id="3ZC-v4-qay"/>
+                            <constraint firstItem="orQ-Cn-v6i" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="3wD-9J-Gdo"/>
+                            <constraint firstItem="Lgl-lx-Yri" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="FPk-SW-svd"/>
+                            <constraint firstItem="Lgl-lx-Yri" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LSF-KD-Tcp"/>
+                            <constraint firstItem="ZM9-v7-d91" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="LSc-Fb-z6H"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZM9-v7-d91" secondAttribute="trailing" constant="20" id="hQ0-EU-mNN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ZM9-v7-d91" secondAttribute="bottom" constant="20" id="ncE-ak-Lor"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="orQ-Cn-v6i" secondAttribute="bottom" constant="20" id="yk2-rV-LtT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
