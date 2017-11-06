@@ -15,7 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0A71AED31FACE0E500C1E131 /* ClickCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClickCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A71AED31FACE0E500C1E131 /* ClickCounter2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClickCounter2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A71AED61FACE0E500C1E131 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A71AED81FACE0E500C1E131 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0A71AEDB1FACE0E500C1E131 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -46,7 +46,7 @@
 		0A71AED41FACE0E500C1E131 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0A71AED31FACE0E500C1E131 /* ClickCounter.app */,
+				0A71AED31FACE0E500C1E131 /* ClickCounter2.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,9 +67,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0A71AED21FACE0E500C1E131 /* ClickCounter */ = {
+		0A71AED21FACE0E500C1E131 /* ClickCounter2 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0A71AEE51FACE0E500C1E131 /* Build configuration list for PBXNativeTarget "ClickCounter" */;
+			buildConfigurationList = 0A71AEE51FACE0E500C1E131 /* Build configuration list for PBXNativeTarget "ClickCounter2" */;
 			buildPhases = (
 				0A71AECF1FACE0E500C1E131 /* Sources */,
 				0A71AED01FACE0E500C1E131 /* Frameworks */,
@@ -79,9 +79,9 @@
 			);
 			dependencies = (
 			);
-			name = ClickCounter;
+			name = ClickCounter2;
 			productName = ClickCounter;
-			productReference = 0A71AED31FACE0E500C1E131 /* ClickCounter.app */;
+			productReference = 0A71AED31FACE0E500C1E131 /* ClickCounter2.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -113,7 +113,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0A71AED21FACE0E500C1E131 /* ClickCounter */,
+				0A71AED21FACE0E500C1E131 /* ClickCounter2 */,
 			);
 		};
 /* End PBXProject section */
@@ -278,7 +278,7 @@
 				DEVELOPMENT_TEAM = HC96PPTQS3;
 				INFOPLIST_FILE = ClickCounter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cliff538.ClickCounter;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cliff538.ClickCounter2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -293,7 +293,7 @@
 				DEVELOPMENT_TEAM = HC96PPTQS3;
 				INFOPLIST_FILE = ClickCounter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cliff538.ClickCounter;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cliff538.ClickCounter2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -312,7 +312,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0A71AEE51FACE0E500C1E131 /* Build configuration list for PBXNativeTarget "ClickCounter" */ = {
+		0A71AEE51FACE0E500C1E131 /* Build configuration list for PBXNativeTarget "ClickCounter2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0A71AEE61FACE0E500C1E131 /* Debug */,
