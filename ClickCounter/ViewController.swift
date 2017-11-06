@@ -13,7 +13,6 @@ class ViewController: UIViewController {
 	// MARK: - View Did Load
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		
 	}
 	
 	// MARK: - Outlets
@@ -28,12 +27,11 @@ class ViewController: UIViewController {
 		countLabel.text = String(count)
 	}
 	
+	
 	@IBAction func tapResetButton(_ sender: UIBarButtonItem) {
 		count = 0
 		countLabel.text = String(count)
 	}
-	
-	
 	
 
 	

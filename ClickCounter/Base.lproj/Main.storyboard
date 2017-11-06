@@ -35,6 +35,9 @@
                                         <rect key="frame" x="0.0" y="307.33333333333337" width="88" height="84"/>
                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="60"/>
                                         <state key="normal" title="Tap"/>
+                                        <connections>
+                                            <action selector="tapCounter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2r6-4P-Kk8"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -49,8 +52,15 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Click Counter" id="B14-TP-8j9">
-                        <barButtonItem key="leftBarButtonItem" title="Reset" id="McC-nf-1OR"/>
+                        <barButtonItem key="leftBarButtonItem" title="Reset" id="McC-nf-1OR">
+                            <connections>
+                                <action selector="tapResetButton:" destination="BYZ-38-t0r" id="nxg-4E-7RL"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="countLabel" destination="kpI-yW-a5w" id="ZH9-JO-BAf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
