@@ -41,6 +41,26 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZM9-v7-d91">
+                                <rect key="frame" x="301" y="674" width="93" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Subtract"/>
+                                <connections>
+                                    <action selector="subtractButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bic-Jv-phD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="orQ-Cn-v6i">
+                                <rect key="frame" x="20" y="674" width="123" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Tap or Hold"/>
+                                <connections>
+                                    <action selector="tapOrHoldButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T6P-vU-3g9"/>
+                                    <outletCollection property="gestureRecognizers" destination="SBz-nz-6u4" appends="YES" id="5F9-6s-gCe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -63,8 +83,13 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="SBz-nz-6u4">
+                    <connections>
+                        <action selector="longPressTapButton:" destination="BYZ-38-t0r" id="bKK-Gf-AAV"/>
+                    </connections>
+                </pongPressGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="271" y="134"/>
+            <point key="canvasLocation" x="269.56521739130437" y="133.69565217391306"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lPl-Oz-ccS">

@@ -23,17 +23,34 @@ class ViewController: UIViewController {
 	
 	// MARK: - Interactions
 	@IBAction func tapCounter(_ sender: UIButton) {
-		count += 1
-		countLabel.text = String(count)
+		increaseCount()
 	}
-	
 	
 	@IBAction func tapResetButton(_ sender: UIBarButtonItem) {
 		count = 0
 		countLabel.text = String(count)
 	}
 	
-
+	@IBAction func tapOrHoldButton(_ sender: UIButton) {
+		increaseCount()
+	}
+	
+	@IBAction func subtractButton(_ sender: UIButton) {
+		count -= 1
+		countLabel.text = String(count)
+	}
+	
+	@IBAction func longPressTapButton(_ sender: UILongPressGestureRecognizer) {
+		increaseCount()
+	}
+	
+	
+	// MARK: - Functions
+	func increaseCount() {
+		count += 1
+		countLabel.text = String(count)
+	}
+	
 	
 
 
